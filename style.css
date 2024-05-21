@@ -1,0 +1,66 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6e3;
+    color: #002b36;
+}
+
+header {
+    background-color: #002b36;
+    color: #fdf6e3;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1, h2 {
+    margin: 0.5rem 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #002b36;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.7rem;
+    background-color: #002b36;
+    color: #fdf6e3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #073642;
+}
+
+#recipes-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recipes-list li {
+    background-color: #fdf6e3;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid #002b36;
+    border-radius: 5px;
+}
