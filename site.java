@@ -34,3 +34,7 @@ document.getElementById('new-recipe-form').addEventListener('submit', function(e
     // Limpar o formulário
     document.getElementById('new-recipe-form').reset();
 });
+// Adicionar evento de exclusão para o botão "Excluir"
+recipeItem.querySelector('.delete-btn').addEventListener('click', function() {
+    recipeItem.remove();
+});
