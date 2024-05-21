@@ -15,7 +15,13 @@ document.getElementById('new-recipe-form').addEventListener('submit', function(e
         <p>${ingredients}</p>
         <p><strong>Instruções:</strong></p>
         <p>${instructions}</p>
+        <button class="delete-btn">Excluir</button>
     `;
+
+    // Adicionar evento de exclusão para o botão "Excluir"
+    recipeItem.querySelector('.delete-btn').addEventListener('click', function() {
+        recipeItem.remove();
+    });
 
     // Adicionar imagem se fornecida
     if (image) {
@@ -33,8 +39,4 @@ document.getElementById('new-recipe-form').addEventListener('submit', function(e
 
     // Limpar o formulário
     document.getElementById('new-recipe-form').reset();
-});
-// Adicionar evento de exclusão para o botão "Excluir"
-recipeItem.querySelector('.delete-btn').addEventListener('click', function() {
-    recipeItem.remove();
 });
